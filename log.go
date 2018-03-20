@@ -1,4 +1,4 @@
-//Package log is a robust logging system that provides a standard logger, an ANSI color logger, and a json logger that all make use of log levels
+//Package log is a more robust logging system that provides a standard logger, an ANSI color logger, and a JSON logger that all make use of log levels. This package used to exist under the Sacrificial-Socket websocket package, but has since been broken out into it's own repository.
 package log
 
 import (
