@@ -14,9 +14,9 @@ import "github.com/raz-varren/log"
 
 func main(){
 	log.Info.Println("white info log")
-    log.Warn.Println("orange warn log")
-    log.Err.Println("red error log")
-    log.Debug.Println("blue debug log")
+	log.Warn.Println("orange warn log")
+	log.Err.Println("red error log")
+	log.Debug.Println("blue debug log")
 }
 ```
 
@@ -26,18 +26,18 @@ package main
 
 import(
 	"github.com/raz-varren/log"
-   	"os"
+	"os"
 )
 
 func main(){
 	//Some command consoles (like windows) can't use ANSI colors, 
-    //or perhaps you want a different log level
-    log.SetDefaultLogger(log.NewLogger(os.Stdout, log.LogLevelStd))
-    
-    log.Info.Println("plain info log")
-    log.Warn.Println("plain warn log")
-    log.Err.Println("plain error log")
-    log.Debug.Println("no plain debug log")
+	//or perhaps you want a different log level
+	log.SetDefaultLogger(log.NewLogger(os.Stdout, log.LogLevelStd))
+
+	log.Info.Println("plain info log")
+	log.Warn.Println("plain warn log")
+	log.Err.Println("plain error log")
+	log.Debug.Println("no plain debug log")
 }
 ```
 
@@ -55,11 +55,11 @@ func main(){
 	if err != nil {
 		panic(err)
 	}
-	
+
 	log.SetDefaultLogger(log.NewLogger(f, log.LogLevelDbg))
 	log.Info.Println("file info log")
-    log.Warn.Println("file warn log")
-    log.Err.Println("file error log")
-    log.Debug.Println("file debug log")
+	log.Warn.Println("file warn log")
+	log.Err.Println("file error log")
+	log.Debug.Println("file debug log")
 }
 ```
